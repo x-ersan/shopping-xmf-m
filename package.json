@@ -1,0 +1,23 @@
+{
+  "name": "shopping-xmf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/x-ersan/shopping-xmf-m.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/x-ersan/shopping-xmf-m/issues"
+  },
+  "homepage": "https://github.com/x-ersan/shopping-xmf-m#readme",
+  "dependencies": {
+    "@escook/request-miniprogram": "^0.2.1"
+  }
+}
