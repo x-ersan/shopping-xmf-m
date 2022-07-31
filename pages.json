@@ -1,17 +1,72 @@
 {
 	"pages": [{
-		"path": "pages/index/index",
+		"path": "pages/home/home",
 		"style": {
-			"navigationBarTitleText": "uni-app"
+			"navigationBarTitleText": "帆的小程序"
 		}
-	}],
+	}    ,{
+            "path" : "pages/cat/cat",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/cate/cate",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/my/my",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+        }
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
+		"navigationBarTitleText": "帆的小程序",
+		"navigationBarBackgroundColor": "#c00000",
 		"backgroundColor": "#F8F8F8",
 		"app-plus": {
 			"background": "#efeff4"
 		}
-	}
+	},
+  "tabBar": {
+    "selectedColor": "#c00000",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "static/home-smile-2-fill.png",
+        "selectedIconPath": "static/home-smile-2-line.png"
+      },
+      {
+        "pagePath": "pages/cat/cat",
+        "text": "购物车",
+        "iconPath": "static/mail-check-fill.png",
+        "selectedIconPath": "static/mail-check-line.png"
+      }, 
+      {
+        "pagePath": "pages/cate/cate",
+        "text": "分类",
+        "iconPath": "static/bubble-chart-fill.png",
+        "selectedIconPath":"static/bubble-chart-line.png"
+      }, 
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "static/bookmark-3-fill.png",
+        "selectedIconPath": "static/bookmark-3-line.png"
+      }
+    ]
+  }
 }
