@@ -1,6 +1,6 @@
 <template>
   <view>
-    我的
+    <button open-type="getUserInfo" @getuserinfo="getUserInfo">denglu</button>
   </view>
 </template>
 
@@ -10,6 +10,11 @@
       return {
         
       };
+    },
+    methods:{
+      getUserInfo(e){
+        console.log(e)
+      }
     }
   }
 </script>

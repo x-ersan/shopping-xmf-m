@@ -1,6 +1,6 @@
 <template>
   <view>
-    <swiper :indicator-dots="true" :autoplay="true" :interval="3000" :duration="1000" :current="true">
+    <swiper :indicator-dots="true" :autoplay="true" :interval="3000" :duration="1000" circular="true">
       <swiper-item v-for="(item,i) in swiperList" :key="i">
         <navigator class="swiper-item" :url=" '/subpkg/goods_detail/goods_detail?goods_id='+item.goods_id">
           <img :src="item.image_src" >
@@ -46,7 +46,8 @@
         // 1. 分类导航的数据列表
               navList: [],         
                    // 1. 楼层的数据列表
-                         floorList: [],
+              floorList: [],
+              circular: true,
       };
     },
     onLoad() {
@@ -55,7 +56,7 @@
           // 2. 在 onLoad 中调用获取数据的方法
           this.getNavList()
           // 2. 在 onLoad 中调用获取楼层数据的方法
-              this.getFloorList()
+           this.getFloorList()
     },
     methods:{
      async getSwiperList(){
@@ -72,10 +73,15 @@
            this.navList = res.message
          },
          navClickHandler(item){
+           console.log(item)
             // 判断点击的是哪个 nav
              if (item.name === '分类') {
                uni.switchTab({
                  url: '/pages/cate/cate'
+               })
+             }if (item.name === '超市购') {
+               uni.switchTab({
+                 url: '/pages/cat/cat'
                })
              }
          },
